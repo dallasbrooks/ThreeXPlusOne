@@ -8,7 +8,7 @@ void ThreeXPlusOne(long n, long& c)
     {
         return;
     }
-    n = n%2 ? 3*n+1 : n/2;
+    n = n&1 ? 3*n+1 : n/2;
     return ThreeXPlusOne(n, ++c);
 }
 
